@@ -1,0 +1,51 @@
+Welcome to Informational Commands. After watching this video, you will be able
+to: Find user information. Determine operating system information. Analyze disk usage. Describe and verify system health. List running processes and their resource
+usage. And finally, execute additional miscellaneous
+commands and obtain information about them. The command “whoami” will display the
+user’s identity. The “whoami” command takes no arguments and has no options. Here you see a usage example for someone logged
+in as user “John Doe.” Similarly, the “id” command returns the
+user ID and/or the user’s group ID. Here you see an example where “id” returns
+the numerical “id” of the user with the –u option. If you would like the name corresponding to
+the numerical user id, add the –n option. The “uname” command, which stands for
+Unix name, returns OS information such as the kernel
+name and version number. Entering the uname command returns the name
+of the operating system, which in this case is Darwin. Including the “minus s” and “minus r”
+options returns both the OS name and its version. Alternatively you can view all version information
+using the –v option. You can use the “df” command to display
+your system’s disk usage. For example, entering “df minus H tilda”, displays the following table, which is specific to “tilda”, your home
+directory, such as all disks mounted on your home directory, and the percentage of storage used on each
+disk. The “minus h” option makes the output
+“human readable, expressing disk space in units like Gigabytes and Terabytes instead of Bytes. To view disk usage on all filesystems, you
+can also just type “df –h”. The output includes the size, the capacity
+used and available space for each filesystem. The “ps” command will display the currently
+running processes. You can use the “ps” command with the
+“minus u root” option to show only the processes running with root user privileges. This includes information such as the name of each running process, the process ID, and the time in minutes and seconds that each
+process has been running. The “top” command acts as a task manager
+and will show running processes and their resource
+usage. Here we show a usage example with the –n
+option to display the top three running tasks: chrome, top, and spotify. By default, tasks are sorted by CPU usage. We simplified the output for the sake of the
+presentation, but top provides many other details, like memory usage and the executable
+file location. The “echo” command prints the given string,
+or the value of a given variable. In Shell scripting, “echo” is commonly
+used as a print command. If you enter ”echo” you are basically
+saying “print nothing” so you just get a newline. If you would like to echo a single word without
+whitespace, such as “hello” you can just type “echo hello”. But if your string contains spaces, you need
+to use quotes. Then echo returns the quoted contents “Learning
+Linux is fun!” Finally, you can view the value of a variable,
+such as “PATH” by typing a dollar sign followed by the variable name, here we view each path of our system’s PATH
+variable, delimited by colons. The “date” command displays the current
+system date and time. Entering “date” returns the default date
+format: day of week, day, month, year, time, and the
+time zone. You can extract parts from the date, like
+in this example, which prints “259 day of year”. The “percent letter” symbols in these
+arguments are used to extract properties of the current date. For example, “percent Y” is replaced by
+the current year, 2021. And, here is another example, where you can see that the day of the week
+has also been included. All default Linux commands come with a manual
+that you can display using the “man” command. For example, you can enter “man id” to display the manual for the “id “command. You get information like “return user identity”,
+stating what the command does Also listed are the options for “id”,
+such as “minus a”. Square brackets are used to indicate optional
+parameters, such as “user” which allows you to specify a username. A detailed description of the command is also
+provided. The man command even has its own man page. In this video, you learned how to: Get user information with the "whoami" and
+"id" commands. Check system disk usage using the "df" command. See process load using "ps" and "top". Print string or variable value using "echo". View the date in different formats using the
+"date" command. And finally, read the manual for any command
+using “man”.

@@ -1,0 +1,38 @@
+Welcome to File and Directory Navigation Commands. In this video you will learn how to: List directory contents, Navigate directories, And, find files. The “L S” command will list the files
+and directories within a directory. If you enter “L S” in your home directory,
+you will see all files and directories that your home directory contains. You can also pass a directory name, such as
+“Downloads”, as a parameter to “L S”, which displays the contents of your Downloads
+folder. The “L S” command also supports further
+options to provide additional information. Now, suppose you are currently working in
+your documents folder. You can use “L S” with the “minus L”
+option, which will show child files and directories in a longer, more detailed format. And you can see all child files and directories
+along with additional details, such as: permissions, last-modified date, and owner. The “p w d” command will print the present
+working directory. You can enter “p w d” whenever you are
+not sure which directory you are in. Here you can see that you are currently working
+in your home directory, “slash users slash me”. The “cd” command is used to change the
+current working directory. Now, suppose you are in your home directory,
+and you wish to move to your Documents folder, which happens to be contained in your home
+directory You simply enter “c d Documents”. Now, if you enter “pwd”, you can see that
+you are indeed in your Documents folder. The “c d” command enables you to change
+directories with either an absolute path to the directory, which always starts from the
+base or “slash” directory, or as relative path, which starts from your current working
+directory. Now, imagine you are in a “Notes” folder
+somewhere in your “Documents” directory tree. To get to your immediate parent directory,
+you can simply enter the cd command along with the relative path symbol, “dot dot”
+as its argument. Now, you can see you are in “Math”, which
+is the parent directory of your notes folder. If you want to get to your home folder directly,
+without having to explore to get there, then you can simply use the “tilda” symbol. And you are now in your home folder. Tilda
+represents your absolute path to home. Finally, you can provide a full path to a
+directory. Here, you are referring to the absolute pathname
+for the Notes directory from where you started your journey. And as expected, you are now back where you
+started, in your Notes directory. The “find” command is a powerful tool
+that will find the path to every file that matches a given user-specified criterion. Now, suppose your Documents folder has a file structure
+as shown, with two subfolders, each containing a few files. And let’s say, you are currently in your
+Documents folder, and you want to find the path to all files called ”a dot text”
+within your “Documents” tree. To do so, you can simply type “find dot
+minus name a dot txt”. The “dot” argument means “search within
+here”, that is, from your current working directory. To perform a case-insensitive version of your
+search, you can use the “minus i name” option instead of “ i name”. And, indeed, you find the same file, plus
+another file with the same name except that the letter “A” is uppercase. In this video you learned that: The “ls” command lists all files and directories
+contained within a specified directory tree And, you can navigate directories using the
+“cd” command.
