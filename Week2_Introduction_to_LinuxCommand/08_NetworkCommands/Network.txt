@@ -1,0 +1,52 @@
+Welcome to Networking Commands. In this video you will learn how to: Examine your network configuration. Evaluate the stability of a URL connection. And, Identify and retrieve data from a URL. The “host name” command is used to get or set the “host name” and other information
+which uniquely identifies your computer. Entering the “host name” command without any
+options returns the host name of your machine. Which in this example is “my
+Linux machine dot local”. The “dot local” suffix appears in the host
+name if your machine has “local domains” set. To drop the domain suffix, you
+can include the “minus S” option. If you use the “minus i” option, hostname
+will provide the IP address of the hostname. The ifconfig command, which stands
+for Interface configuration, displays information regarding all
+your device’s communication devices. If you enter ”if config” with no options, you get
+a lot of information – including the IP address, MAC addresses, and the hardware
+specifications of your communication devices. A lot of this information is
+beyond the scope of this course and would be more useful
+for system administrators. You can also specify a specific
+device you want ifconfig to inspect, such as an ethernet adapter, called ”eth0”. Entering “ifconfig eeth zero” returns information
+about your ethernet adapter, such as its internet address, the number of packets received, including
+counts of errors and dropped packets, the same metrics applied to transmitted packets, and the
+total amount of data received and transmitted. You can use the “ping” command to test
+connectivity to a host or IP address. "ping" sends packets known
+as ICMP (Internet Control Message Protocol) requests to the server,
+listens for a response, and prints a result. For example, by entering "ping google dot
+com", "ping" returns a line of info for each successful response to an echo request and
+continues until you abort with "control C". And after ping aborts, it prints
+summary statistics for the ping results. For each echo request, ping reports
+useful information, including: The IP address of the given URL, " one four two
+dot two five one dot four one dot six eight", and the total round-trip time in milliseconds. The provided statistics at the end include: how many packets were transmitted and received, the percentage of packets dropped, and the minimum, average, maximum, and standard
+deviation of the round-trip times in milliseconds. If you would like the ping command to
+return a set number of ping results, you can use the “minus C” option: Entering “ping minus c five google dot com” returns the five ping results, aborts, and then prints the same statistics it would
+print without the “minus C” option. The “curl” command is a powerful tool
+which enables you to transfer data to and from URLs and supports
+many different protocols. Entering "curl www dot google dot
+com" returns the entire HTML content of the landing page at www.google.com,
+using the default “H T T P” protocol. You can see, for example, the path to
+a “P N G” file for the google "G" logo. You can render the logo by appending its
+path to "google dot com" in your browser. You can even get curl to
+write the contents of a URL to a local file. This is done
+using the “minus o” option. For example, you can enter "curl www
+dot google dot com" together with the ”minus o” option and a file
+name such as “google dot text”. You can then view the contents of google.txt using the head command and verify that the file
+contents indeed match the previous output. Similar to curl, the “w get” command is
+used to retrieve files located at a URL. wget is like curl in that it can retrieve a file
+located at a URL or the HTML code for a web page, but it is more specialized in its protocol support
+and has recursive downloading capabilities. This is useful when a URL might point
+to a folder that contains several files. Here you use wget to download a single test file called " I S O underscore eight eight five nine
+dash one dot text", which is hosted by w3.org. wget returns information while
+it is downloading, such as: “resolving and connecting” to the target server, “HTTP request sent, awaiting response”, and “saving the file”, which it automatically names for
+you, to the current directory. For reference, here is what your browser shows you when viewing looking at
+the data located at the URL. It’s a simple text file. By entering “head minus twelve I S O underscore
+eight eight five nine dash one dot text", you see the first twelve lines of
+the contents of the downloaded file. As expected, the file contains the exact same
+data that you just saw on the previous slide. In this video you learned how to: View network configuration
+with hostname and “i f config”. Test a network connection using the ping command. And, send and receive data using
+the curl and “w get” commands.
